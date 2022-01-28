@@ -1,0 +1,54 @@
+# macOS
+__MACOSX/
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDEA project files
+.idea/
+*.ipr
+*.iml
+*.iws
+
+# Eclipse project files
+.project
+.classpath
+.settings
+
+# Maven output
+target/
+
+# Node.js
+node_modules/
+build/
+dist/
+
+# Logs
+logs/
+*.log
+
+# Emacs backup files
+*~
+
+# Make files
+Makefile.in
+aclocal.m4
+config.h.in
+configure
+depcomp
+install-sh
+missing

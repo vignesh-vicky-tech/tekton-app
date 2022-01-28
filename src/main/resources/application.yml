@@ -1,0 +1,27 @@
+server:
+  port: ${WEB_PORT:8080}
+
+spring:
+  datasource:
+    hikari:
+      jdbc-url: ${WEB_DB_URL:jdbc:postgresql://localhost:5432/web_example}
+      username: ${WEB_DB_USER:web_example}
+      password: ${WEB_DB_PASSWORD:web_example}
+      connection-test-query: "SELECT 1"
+      maximum-pool-size: 50
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        ddl-auto: validate
+        temp.use_jdbc_metadata_defaults: false
+    show-sql: false
+  flyway:
+    locations: classpath:database/migration
+    enabled: ${WEB_MIGRATION_ENABLED:true}
+
+logging:
+  level:
+    root: ${WEB_LOGGING_LEVEL:ERROR}
+    com.softline: ${WEB_LOGGING_LEVEL:INFO}
