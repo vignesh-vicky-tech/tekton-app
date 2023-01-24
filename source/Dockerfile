@@ -1,5 +1,5 @@
 # Dockerfile
-FROM adoptopenjdk:openjdk11
+FROM adoptopenjdk/openjdk11
 MAINTAINER WEB_EXAMPLE
 
 # Passed by caller
